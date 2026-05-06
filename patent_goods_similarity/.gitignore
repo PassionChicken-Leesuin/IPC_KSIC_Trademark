@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+cache/
+output/
+*.npy
+*.parquet
+*.pkl
+.ipynb_checkpoints/
+.vscode/
+.idea/

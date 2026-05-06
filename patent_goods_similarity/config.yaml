@@ -1,0 +1,20 @@
+# 경로 (절대 경로 권장; Windows의 한글 경로도 그대로 동작)
+paths:
+  data_dir: "../data"                    # 원본 파일이 있는 디렉터리 (프로젝트 폴더 기준 상위의 data 폴더)
+  patent_csv: "통합_CSV.csv"
+  ipc_ksic_xlsx: "KSIC-특허IPC 연계표.xlsx"
+  ksic_goods_xlsx: "KSIC-지정상품 연계표.xlsx"
+  cache_dir: "cache"
+  output_dir: "output"
+
+# 임베딩 설정
+embedding:
+  model: "text-embedding-3-small"
+  dimensions: 1536          # 기본값. 축소하려면 256/512/1024 등
+  batch_size: 256           # 한 번의 API 호출에 보낼 텍스트 개수
+  max_retries: 6
+  request_timeout: 60
+
+# 검색 설정
+search:
+  top_k: 10
